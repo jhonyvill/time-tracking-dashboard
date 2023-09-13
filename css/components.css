@@ -1,0 +1,248 @@
+.container {
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0.625rem auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.data-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.header {
+  grid-row: 1/-1;
+  background-color: var(--violet-600);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile {
+  background-color: var(--violet-200);
+  height: 100%;
+  max-height: 17.5rem;
+  border-radius: 15px;
+  padding: 2.188rem 1.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.625rem;
+}
+.profile img {
+  border-radius: 50%;
+  border: 2px solid var(--white);
+}
+
+.profile-name {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1.875rem;
+}
+
+.card {
+  width: 100%;
+  height: 13.75rem;
+  position: relative;
+  border-radius: 15px;
+}
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.bg-card-work {
+  background: var(--orange) url("../images/icon-work.svg") no-repeat top -12px
+    right 15px;
+}
+
+.bg-card-play {
+  background: var(--blue) url("../images/icon-play.svg") no-repeat top -5px
+    right 15px;
+}
+.bg-card-study {
+  background: var(--red) url("../images/icon-study.svg") no-repeat top -12px
+    right 15px;
+}
+.bg-card-exercise {
+  background: var(--green) url("../images/icon-exercise.svg") no-repeat
+    top right 15px;
+}
+.bg-card-social {
+  background: var(--purple) url("../images/icon-social.svg") no-repeat top -18px
+    right 15px;
+}
+.bg-card-self-care {
+  background: var(--yellow) url("../images/icon-self-care.svg") no-repeat
+    top -12px right 15px;
+}
+
+.card-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2.188rem;
+  align-items: center;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 80%;
+  background-color: var(--violet-600);
+  border-radius: 15px;
+  padding: 1.25rem 1.875rem;
+  box-sizing: border-box;
+}
+
+.card-content:hover {
+  background-color: var(--violet-400);
+}
+
+.card-content h2, p, span {
+  grid-column: 1/3;
+}
+
+.card-menu-button {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  background-color: transparent;
+  border: none;
+}
+
+.card-content img {
+  z-index: 2;
+}
+
+.card-title {
+  font-size: inherit;
+  font-weight: 500;
+}
+.card-time {
+  font-size: 3rem;
+}
+.card-previous-time {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--violet-100);
+}
+
+.modal {
+  display: none;
+  background-color: var(--violet-800);
+  border-radius: 10px;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 0.625rem;
+  z-index: 1;
+}
+
+.modal a {
+  cursor: pointer;
+  padding: 0.313rem 1.25rem;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 600px;
+  }
+  .data-container {
+    grid-template-columns: 1fr;
+  }
+  .header {
+    grid-row: 1;
+    grid-column: 1/-1;
+  }
+  .profile {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .profile img {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+  .profile-name {
+    margin-bottom: 0px;
+  }
+  .card-content {
+    padding: 1.25rem 3.125rem;
+  }
+  .card-content p {
+    grid-column: 1/2;
+    font-size: 3rem;
+  }
+  .card-content span {
+    grid-column: 2/-1;
+    text-align: right;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 500px;
+  }
+  .header {
+    grid-column: 1;
+  }
+  .profile-name {
+    font-size: 1.8rem;
+  }
+  .card {
+    height: 10.938rem;
+  }
+  .card:hover {
+    transform: none;
+  }
+  .card-content {
+    padding: 1.25rem 1.875rem;
+  }
+  .card-content p {
+    font-size: 2.5rem;
+  }
+  .card-content span {
+    font-size: 1rem;
+  }
+  .modal {
+    padding-top: 0.625rem;
+    padding-right: 1.875rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .profile {
+    padding: 1.563rem 1.25rem;
+  }
+  .profile img {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+  .profile-name {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    min-width: 360px;
+  }
+  .profile img {
+    width: 4.063rem;
+    height: 4.063rem;
+  }
+  .profile-name {
+    font-size: 1.5rem;
+  }
+  .card-content p {
+    font-size: 2.2rem;
+  }
+  .card-content span {
+    font-size: 0.9rem;
+  }
+}

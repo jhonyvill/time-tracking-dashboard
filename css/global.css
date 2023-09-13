@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -7,4 +11,66 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 1.125rem;
   font-weight: 300;
+}
+
+p,
+h1,
+h2,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1.5rem;
+}
+
+nav {
+  padding: 0.625rem 1.875rem;
+}
+
+ul {
+  list-style: none;
+  color: var(--violet-100);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+ul li a {
+  display: inline-block;
+  padding: 0.625rem 0;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+ul li a:hover {
+  color: var(--white);
+}
+
+@media (max-width: 1000px) {
+  body {
+    height: 100%;
+  }
+  ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+  }
 }

@@ -1,0 +1,14 @@
+.anime-top-down {
+  animation: animeTopDown 0.2s forwards;
+}
+
+@keyframes animeTopDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

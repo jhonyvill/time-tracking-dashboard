@@ -1,2 +1,4 @@
 @import "./utils/colors.css";
 @import "./global.css";
+@import "./components.css";
+@import "./utils/animations.css";
