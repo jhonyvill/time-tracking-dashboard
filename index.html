@@ -28,9 +28,9 @@
 
         <nav aria-label="primária" >
           <ul>
-            <li><a href="#data">Daily</a></li>
-            <li><a href="#data">Weekly</a></li>
-            <li><a href="#data">Monthly</a></li>
+            <li data-menu-option="daily"><a href="#data">Daily</a></li>
+            <li data-menu-option="weekly"><a href="#data">Weekly</a></li>
+            <li data-menu-option="monthly"><a href="#data">Monthly</a></li>
           </ul>
         </nav>
       </header>
@@ -40,19 +40,19 @@
           <div class="card-content">
             <h2 class="card-title">Work</h2>
 
-            <div>
-              <button class="card-menu-button" aria-label="menu interno">
+            <div data-card="menu">
+              <button class="card-btn" data-card-btn="work-modal" aria-label="menu interno" aria-expanded="false">
                 <img src="./images/icon-ellipsis.svg" width="21" height="5" alt="menu três pontos">
               </button>
-              <ul class="modal anime-top-down" aria-label="selecione o período">
-                <li><a href="#work">Daily</a></li>
-                <li><a href="#work">Weekly</a></li>
-                <li><a href="#work">Monthly</a></li>
+              <ul id="work-modal" class="modal anime-top-down" data-modal="work" aria-hidden="true" aria-label="selecione o período">
+                <li data-modal-option="daily"><a href="#work">Daily</a></li>
+                <li data-modal-option="weekly"><a href="#work">Weekly</a></li>
+                <li data-modal-option="monthly"><a href="#work">Monthly</a></li>
               </ul>
             </div>
 
-            <p class="card-time">1h</p>
-            <span class="card-previous-time">Last Day - 2hrs</span>
+            <p id="work-time" class="card-time"></p>
+            <span id="work-previous" class="card-previous-time"></span>
           </div>
         </section>
 
@@ -60,19 +60,19 @@
           <div class="card-content">
             <h2 class="card-title">Play</h2>
 
-            <div>
-              <button class="card-menu-button" aria-label="menu interno">
+            <div data-card="menu">
+              <button class="card-btn" data-card-btn="play-modal" aria-label="menu interno" aria-expanded="false">
                 <img src="./images/icon-ellipsis.svg" width="21" height="5" alt="menu três pontos">
               </button>
-              <ul class="modal anime-top-down">
-                <li><a href="#play">Daily</a></li>
-                <li><a href="#play">Weekly</a></li>
-                <li><a href="#play">Monthly</a></li>
+              <ul id="play-modal" class="modal anime-top-down" data-modal="play" aria-hidden="true">
+                <li data-modal-option="daily"><a href="#play">Daily</a></li>
+                <li data-modal-option="weekly"><a href="#play">Weekly</a></li>
+                <li data-modal-option="monthly"><a href="#play">Monthly</a></li>
               </ul>
             </div>
 
-            <p class="card-time">1h</p>
-            <span class="card-previous-time">Last Day - 2hrs</span>
+            <p id="play-time" class="card-time"></p>
+            <span id="play-previous" class="card-previous-time"></span>
           </div>
         </section>
 
@@ -80,19 +80,19 @@
           <div class="card-content">
             <h2 class="card-title">Study</h2>
 
-            <div>
-              <button class="card-menu-button" aria-label="menu interno">
-                <img src="./images/icon-ellipsis.svg" width="21" height="5" alt="menu três pontos">
+            <div data-card="menu">
+              <button class="card-btn" data-card-btn="study-modal" aria-label="menu interno" aria-expanded="false">
+                <img src="./images/icon-ellipsis.svg" width="21" height="5" alt="menu três pontos" aria-hidden="true">
               </button>
-              <ul class="modal anime-top-down">
-                <li><a href="#study">Daily</a></li>
-                <li><a href="#study">Weekly</a></li>
-                <li><a href="#study">Monthly</a></li>
+              <ul id="study-modal" class="modal anime-top-down" data-modal="study" aria-hidden="true">
+                <li data-modal-option="daily"><a href="#study">Daily</a></li>
+                <li data-modal-option="weekly"><a href="#study">Weekly</a></li>
+                <li data-modal-option="monthly"><a href="#study">Monthly</a></li>
               </ul>
             </div>
 
-            <p class="card-time">1h</p>
-            <span class="card-previous-time">Last Day - 2hrs</span>
+            <p id="study-time" class="card-time"></p>
+            <span id="study-previous" class="card-previous-time"></span>
           </div>
         </section>
 
@@ -100,19 +100,19 @@
           <div class="card-content">
             <h2 class="card-title">Exercise</h2>
 
-            <div>
-              <button class="card-menu-button" aria-label="menu interno">
+            <div data-card="menu">
+              <button class="card-btn" data-card-btn="exercise-modal" aria-label="menu interno" aria-expanded="false">
                 <img src="./images/icon-ellipsis.svg" width="21" height="5" alt="menu três pontos">
               </button>
-              <ul class="modal anime-top-down">
-                <li><a href="#exercise">Daily</a></li>
-                <li><a href="#exercise">Weekly</a></li>
-                <li><a href="#exercise">Monthly</a></li>
+              <ul id="exercise-modal" class="modal anime-top-down" data-modal="exercise" aria-hidden="true">
+                <li data-modal-option="daily"><a href="#exercise">Daily</a></li>
+                <li data-modal-option="weekly"><a href="#exercise">Weekly</a></li>
+                <li data-modal-option="monthly"><a href="#exercise">Monthly</a></li>
               </ul>
             </div>
 
-            <p class="card-time">1h</p>
-            <span class="card-previous-time">Last Day - 2hrs</span>
+            <p id="exercise-time" class="card-time"></p>
+            <span id="exercise-previous" class="card-previous-time"></span>
           </div>
         </section>
 
@@ -120,19 +120,19 @@
           <div class="card-content">
             <h2 class="card-title">Social</h2>
             
-            <div>
-              <button class="card-menu-button" aria-label="menu interno" aria-expanded="false">
+            <div data-card="menu">
+              <button class="card-btn" data-card-btn="social-modal" aria-label="menu interno" aria-expanded="false" aria-expanded="false">
                 <img src="./images/icon-ellipsis.svg" width="21" height="5" alt="menu três pontos">
               </button>
-              <ul class="modal anime-top-down">
-                <li><a href="#social">Daily</a></li>
-                <li><a href="#social">Weekly</a></li>
-                <li><a href="#social">Monthly</a></li>
+              <ul id="social-modal" class="modal anime-top-down" data-modal="social" aria-hidden="true">
+                <li data-modal-option="daily"><a href="#social">Daily</a></li>
+                <li data-modal-option="weekly"><a href="#social">Weekly</a></li>
+                <li data-modal-option="monthly"><a href="#social">Monthly</a></li>
               </ul>
             </div>
 
-            <p class="card-time">1h</p>
-            <span class="card-previous-time">Last Day - 2hrs</span>
+            <p id="social-time" class="card-time"></p>
+            <span id="social-previous" class="card-previous-time"></span>
           </div>
         </section>
 
@@ -140,24 +140,25 @@
           <div class="card-content">
             <h2 class="card-title">Self Care</h2>
 
-            <div>
-              <button class="card-menu-button" aria-label="menu interno">
+            <div data-card="menu">
+              <button class="card-btn" data-card-btn="self-care-modal" aria-label="menu interno" aria-expanded="false">
                 <img src="./images/icon-ellipsis.svg" width="21" height="5" alt="menu três pontos">
               </button>
-              <ul class="modal anime-top-down">
-                <li><a href="#self-care">Daily</a></li>
-                <li><a href="#self-care">Weekly</a></li>
-                <li><a href="#self-care">Monthly</a></li>
+              <ul id="self-care-modal" class="modal anime-top-down" data-modal="self-care" aria-hidden="true">
+                <li data-modal-option="daily"><a href="#self-care">Daily</a></li>
+                <li data-modal-option="weekly"><a href="#self-care">Weekly</a></li>
+                <li data-modal-option="monthly"><a href="#self-care">Monthly</a></li>
               </ul>
             </div>
 
-            <p class="card-time">1h</p>
-            <span class="card-previous-time">Last Day - 2hrs</span>
+            <p id="self-care-time" class="card-time"></p>
+            <span id="self-care-previous" class="card-previous-time"></span>
           </div>
         </section>
       </section>
     </main>
   </div>
+  <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>
