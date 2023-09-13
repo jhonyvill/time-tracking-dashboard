@@ -1,0 +1,10 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-color: var(--violet-900);
+  color: var(--white);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
