@@ -1,6 +1,6 @@
-import { getData } from "./fetch-data.js";
-import { closeModals } from "./modal.js";
-import { updateDisplay } from "./update-display.js";
+import { getData } from "../fetch-data/fetch-data.js";
+import { closeModals } from "../modal/modal.js";
+import { updateDisplay } from "../update-display/update-display.js";
 
 export function initCardPeriodicity() {
   async function handleCardPeriodicityUpdate(card, frequency) {

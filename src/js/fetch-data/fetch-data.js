@@ -1,5 +1,5 @@
 export async function getData() {
-  const path = "../data.json";
+  const path = "../../../../data.json";
   try {
     const response = await fetch(path);
 

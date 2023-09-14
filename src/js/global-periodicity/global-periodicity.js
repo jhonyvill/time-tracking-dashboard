@@ -1,8 +1,7 @@
-import { getData } from "./fetch-data.js";
-import { updateDisplay } from "./update-display.js";
+import { getData } from "../fetch-data/fetch-data.js";
+import { updateDisplay } from "../update-display/update-display.js";
 
 export function initGlobalPeriodicity() {
-
   async function handleGlobalPeriodicityUpdate(frequency) {
     const json = await getData();
     for (const data of json) {
