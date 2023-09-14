@@ -1,4 +1,4 @@
-const getData = async function getData() {
+export async function getData() {
   const path = "../data.json";
   try {
     const response = await fetch(path);
@@ -11,5 +11,3 @@ const getData = async function getData() {
     console.log(`Erro na busca de dados: ${error.stack}`);
   }
 }
-
-export default getData;
