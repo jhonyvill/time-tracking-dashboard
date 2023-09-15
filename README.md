@@ -30,15 +30,15 @@ Abaixo há imagens do design proposto por Frontend Mentor para o desafio.
 
 Tela inicial:
 
-![](./images/design/design-desktop.png)
+![](./src/images/design/design-desktop.png)
 
 Estados ativos:
 
-![](./images/design/active-states.png)
+![](./src/images/design/active-states.png)
 
 #### Mobile
 
-![](./images/design/mobile-design.png)
+![](./src/images/design/mobile-design.png)
 
 ### Tecnologias
 
@@ -49,10 +49,12 @@ Estados ativos:
 - Flexbox
 - CSS Grid
 - JavaScript
+- Webpack
+- Babel
 
 ### Links
 
-- Acessar solução desenvolvida: [em desenvolvimento...]
+- Acessar solução desenvolvida: [jvs-time-tracking-dashboard.netlify.app](https://jvs-time-tracking-dashboard.netlify.app/)
 
 ## Autor
 
