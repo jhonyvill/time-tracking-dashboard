@@ -17,3 +17,6 @@
 
 
 /design/
+node_modules
+main.js.LICENSE.txt
+pnpm-lock.yaml
